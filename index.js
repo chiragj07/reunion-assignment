@@ -19,7 +19,7 @@ mongoose.connect(DB, {
 }).then(()=> console.log('database connected successfully'))
 .catch(err=>console.log(err));
 
-app.listen(5000, ()=>console.log('listening to port 5000'))
+app.listen(port, ()=>console.log(`listening to port ${port}`))
 app.use('/api', require('./Routes/routes.js'))
 
 
